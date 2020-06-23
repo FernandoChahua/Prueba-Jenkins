@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>pe.edu.upc</groupId>
+  <artifactId>OurMavenProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>OurMavenProject</name>
+  <dependencies>
+  
+  	<dependency>
+  	<groupId>junit</groupId>
+  	<artifactId>junit</artifactId>
+  	<version>4.11</version>
+  	<scope>test</scope>
+  	</dependency>
+  	
+  	<dependency>
+  	<groupId>org.seleniumhq.selenium</groupId>
+  	<artifactId>htmlunit-driver</artifactId>
+  	<version>2.29.0</version>
+  	</dependency>
+  	
+  	
+  	
+  </dependencies>
+  <build>
+  		<plugins>
+  			<plugin>
+  				<groupId>apache.maven.plugins</groupId>
+  				<artifactId>naven-surefire-plugin</artifactId>
+  				<version>2.20.1</version>
+  				<configuration>
+  					<includes>
+  						<include>**/*.java</include>
+  					</includes>
+  				</configuration>
+  			</plugin>
+  		</plugins>
+  	</build>
+</project>
